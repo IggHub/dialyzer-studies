@@ -1,4 +1,8 @@
 defmodule Cashy.Bug5 do
+  @type currenct():: :sgd | :usd
+
+  @spec convert(currency, currency, number) :: number
+
   def convert(:sgd, :usd, amount) do
     amount * 0.70
   end
